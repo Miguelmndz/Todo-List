@@ -1,0 +1,46 @@
+const App = () => {
+  const [todos, setTodos] = useState(...)
+  const handleAddToDo = (e, task) => ...
+  const editTodo = (e, id) => ...
+  const deleteTodo = (e, id) => ...
+
+  return <div>
+     <TodoForm {addToDo} /> 
+     <Todos todos={todos}, editTod={editTodo}, deleteTodo={deleteTodo} />
+  </div>
+}
+
+const TodoForm = ({addToDo}) => {
+  return ...
+}
+
+const Todos = ({todos, editTodo, deleteTodo}) => {
+  return <div>
+    ... map ... => <Todo {...todos}, editTodo={editTodo}, deleteTodo={deleteTodo} />
+  </div>
+}
+
+const Todo = ({ id, task, editTodo, deleteTodo}) => {
+  return ...
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  return <div>
+    
+  </div>
